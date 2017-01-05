@@ -1,1 +1,1 @@
-SCBOT, a Starcraft AI program.
+SCBOT, a Starcraft Bot program.
