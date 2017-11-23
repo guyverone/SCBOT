@@ -13,7 +13,7 @@ public class MineralGatherStrategy extends BasicInfo {
      */
     public static void gatherMinerals(Unit farmer, Game game) {
 
-        if (farmer.getType().equals(UnitType.Terran_SCV) || farmer.getType().equals(UnitType.Protoss_Probe) || farmer.getType().equals(UnitType.Zerg_Drone)) {
+        if (UnitType.Terran_SCV.equals(farmer.getType()) || UnitType.Protoss_Probe.equals(farmer.getType()) || UnitType.Zerg_Drone.equals(farmer.getType())) {
 
             if (farmer.isIdle()) {
 
@@ -36,7 +36,7 @@ public class MineralGatherStrategy extends BasicInfo {
                     /**
                      * get Mineral type resource
                      */
-                    if (neutral.getType().equals(UnitType.Resource_Mineral_Field)) {
+                    if (UnitType.Resource_Mineral_Field.equals(neutral.getType())) {
                         mineral = neutral;
                     }
 

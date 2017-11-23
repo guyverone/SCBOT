@@ -87,11 +87,11 @@ public class MySCBot  extends DefaultBWListener {
             MineralGatherStrategy.gatherMinerals(unit, game);
             GeyserGatherStrategy.gatherGeysers(unit, game);
 
-            if(unit.getType().equals(UnitType.Terran_Command_Center)) {
+            if(UnitType.Terran_Command_Center.equals(unit.getType())) {
                 if(!commanderBaseNum.contains(unit)) {
                     commanderBaseNum.add(unit);
                 }
-            }else if((unit.getType().equals(UnitType.Terran_SCV) || unit.getType().equals(UnitType.Protoss_Probe) || unit.getType().equals(UnitType.Zerg_Drone))) {
+            }else if((UnitType.Terran_SCV.equals(unit.getType()) || UnitType.Protoss_Probe.equals(unit.getType()) || UnitType.Zerg_Drone.equals(unit.getType()))) {
                 if(!farmerNum.contains(unit)) {
                     farmerNum.add(unit);
                 }
